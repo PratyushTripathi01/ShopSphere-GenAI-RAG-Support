@@ -1,0 +1,24 @@
+{
+  "name": "rag-ecommerce-support-js",
+  "version": "1.0.0",
+  "description": "GenAI RAG Customer Support application in pure JavaScript using Pinecone and OpenAI",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch src/server.js",
+    "server": "node src/server.js",
+    "ingest": "node src/cli.js ingest",
+    "query": "node src/cli.js query",
+    "cli": "node src/cli.js"
+  },
+  "dependencies": {
+    "@pinecone-database/pinecone": "^9.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.5",
+    "express": "^5.2.1",
+    "js-tiktoken": ">=1.0.20",
+    "openai": ">=4.85.0",
+    "unpdf": "^1.8.1"
+  }
+}
